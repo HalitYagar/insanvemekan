@@ -1,17 +1,19 @@
-<?php
-	
-	$etkinlikler = array(
-		'etkinlik1' => array('url' => 'blabla' ,'context' => 'blabla' ),
-		'etkinlik2' => array('url' => 'blabla' ,'context'  => 'blabla' ),
-		);
-
-	$text = json_encode($etkinlikler);
-
-	echo $text ;
-	$p = fopen("etkinlikler.json", "w");
-
-	
-	fwrite($p , $text );
-	
-
-?>
+<body topmargin="50">
+	<form class="" action="login.php" method="POST">
+		<table align="center">
+			<tr>
+				<td>Kullanici Adi</td>
+				<td>:</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Sifre</td>
+				<td>:</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<td></td>
+			<td></td>
+			<td><input type="submit" value="Giris"></td>
+		</table>
+	</form>
+</body>
